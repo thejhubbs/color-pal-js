@@ -2,12 +2,48 @@
   padding:0;
   margin:0;
   text-align:center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, #header-name a {
+font-family: 'Anton', sans-serif;
+}
+h3, h4, h5, h6, #header-tagline {
+font-family: 'Comfortaa', cursive;
+}
+
+
+hr {
+  width:80%;
+  margin: 25px auto;
+}
+
+body {
+
+  background-color:#ccc
+}
+#body {
+  max-width:800px;
+  margin: auto;
 }
 
 #header {
   background-color:black;
   color:white;
   padding:10px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-name a {
+  font-size: 32px;
+  color:white;
+}
+
+#header-tagline {
+  font-size: 24px;
+  margin-left:12px;
 }
 
 #body{
@@ -22,35 +58,39 @@
   text-align:center;
 }
 
-#colorBox {
-  width:60%;
-  display:inline-block;
+#colorDisplayComponent {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  align-items:center;
+  width:100%;
 }
-#colorForm {
-  width:35%;
-  display:inline-block;
+
+#colorBox {
+  width:100%;
+  max-width:500px;
 }
 
 #colorBox div {
-    border:4px solid white;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
 }
 
 #colorBox span {
-  display:inline-block;
-  width:100px;
-  height:37px;
   margin:0;
+  width:16%;
+  display:inline-block;
+  padding: 4px 0;
 }
 
 #colorBox #mainRow {
-  border:4px outset black;
-  width:auto;
-  display:inline-block;
 }
 
 #colorBox #mainRow span {
   height:150px;
 }
+
 
 
 .slider {
@@ -59,5 +99,16 @@
 
 #copyLink {
   width:400px;
+  max-width:80%;
   padding:5px;
+  margin:10px auto;
+}
+
+.palette-button {
+  display:inline-block;
+  padding:10px;
+  text-decoration:none;
+  margin:5px;
+  font-weight:bold;
+  border-radius:10px;
 }
